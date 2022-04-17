@@ -1,0 +1,53 @@
+{
+  "name": "ahctpac",
+  "version": "0.0.1",
+  "description": "A CAPTCHA parser",
+  "keywords": [
+    "ahctpac",
+    "CAPTCHA parser"
+  ],
+  "homepage": "https://github.com/qq15725/ahctpac",
+  "bugs": {
+    "url": "https://github.com/qq15725/ahctpac/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qq15725/ahctpac.git"
+  },
+  "author": "wxm",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "peerDependencies": {
+    "opencv-4": "^1.2.26"
+  },
+  "peerDependenciesMeta": {
+    "opencv-4": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "unbuild": "0.7.4",
+    "opencv-4": "^1.2.26"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
